@@ -1,5 +1,5 @@
 // Copyright (c) 2026 Hasnain (https://t2hasnain.me). All rights reserved.
-// Licensed under the Creatic WebOS Proprietary Commercial Source & Security License.
+// Licensed under the Creaytic WebOS Proprietary Commercial Source & Security License.
 // Made by Hasnain <t2hasnain.me>
 
 'use client';
@@ -32,9 +32,9 @@ export default function Header() {
   const [showAbout, setShowAbout] = useState(false);
 
   // WiFi interactive lists
-  const [wifiSelected, setWifiSelected] = useState('Creatic_5G');
+  const [wifiSelected, setWifiSelected] = useState('Creaytic_5G');
   const [wifiNetworks] = useState([
-    { name: 'Creatic_5G', signal: 3 },
+    { name: 'Creaytic_5G', signal: 3 },
     { name: 'Home_Net_2.4G', signal: 2 },
     { name: 'Apple_Guest_Net', signal: 3 },
     { name: 'Coffee_Shop_Free_Wifi', signal: 1 },
@@ -120,7 +120,7 @@ export default function Header() {
 
   const menuItems: Record<string, Array<{ label: string; action: () => void; divider?: boolean }>> = {
     apple: [
-      { label: 'About Creatic WebOS', action: () => { setShowAbout(true); setActiveDropdown(null); } },
+      { label: 'About Creaytic WebOS', action: () => { setShowAbout(true); setActiveDropdown(null); } },
       { label: 'System Settings...', action: () => { openApp('settings'); setActiveDropdown(null); }, divider: true },
       { label: 'Sleep Session', action: () => { setIsSleeping(true); setActiveDropdown(null); } },
       { label: 'Restart Node...', action: () => window.location.reload() },
@@ -293,7 +293,7 @@ export default function Header() {
                       <span>✓</span>
                     </div>
                     <div className="flex items-center justify-between px-2 py-1 hover:bg-white/5 rounded-md text-white/50 cursor-pointer transition-colors">
-                      <span>Creatic Display Audio</span>
+                      <span>Creaytic Display Audio</span>
                     </div>
                   </div>
                 </div>
@@ -487,13 +487,13 @@ export default function Header() {
         </div>
       )}
 
-      {/* 3. About This WebOS Modal (Creatic WebOS) */}
+      {/* 3. About This WebOS Modal (Creaytic WebOS) */}
       {showAbout && (
         <div className="fixed inset-0 z-[9999999] bg-black/40 backdrop-blur-sm flex items-center justify-center select-none">
           <div className="bg-[#18181b]/90 border border-white/10 backdrop-blur-2xl p-6.5 rounded-2xl w-full max-w-sm flex flex-col gap-4 text-center shadow-2xl text-white animate-in fade-in zoom-in-95 duration-200">
             <div className="flex justify-between items-center border-b border-white/5 pb-3">
               <span className="text-xs font-black tracking-wider uppercase text-white/40 flex items-center gap-1">
-                <Sparkles size={13} className="text-pink-500" /> About Creatic WebOS
+                <Sparkles size={13} className="text-pink-500" /> About Creaytic WebOS
               </span>
               <button 
                 onClick={() => setShowAbout(false)}
@@ -504,7 +504,7 @@ export default function Header() {
             </div>
 
             <h3 className="text-2xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-indigo-300 to-pink-400">
-              Creatic WebOS
+              Creaytic WebOS
             </h3>
             <span className="text-[9px] text-white/40 font-black tracking-widest uppercase">
               Environment v1.2.6 Cupertino

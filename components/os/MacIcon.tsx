@@ -1,5 +1,5 @@
 // Copyright (c) 2026 Hasnain (https://t2hasnain.me). All rights reserved.
-// Licensed under the Creatic WebOS Proprietary Commercial Source & Security License.
+// Licensed under the Creaytic WebOS Proprietary Commercial Source & Security License.
 // Made by Hasnain <t2hasnain.me>
 
 'use client';
@@ -516,6 +516,61 @@ export default function MacIcon({ id, className = "w-full h-full" }: MacIconProp
               d="M37.5 24.4c-.6-1-1.8-1.4-2.8-.8l-3.3 1.9v-7c0-1.2-1-2.2-2.2-2.2s-2.2 1-2.2 2.2v7l-3.3-1.9c-1-.6-2.3-.2-2.8.8-.6 1-.2 2.3.8 2.8l6 3.5-6 3.5c-1 .6-1.4 1.8-.8 2.8.4.7 1.1 1 1.8 1.1.3 0 .7-.1 1-.3l6-3.5v7c0 1.2 1 2.2 2.2 2.2s2.2-1 2.2-2.2v-7l6 3.5c.3.2.6.3 1 .3.7 0 1.4-.4 1.8-1.1.6-1 .2-2.3-.8-2.8l-6-3.5 6-3.5c1-.6 1.4-1.8.8-2.8z" 
               fill="#ffffff" 
             />
+          </g>
+        </svg>
+      );
+
+    case 'camera': // macOS Photo Booth / Camera Lens Icon
+      return (
+        <svg className={className} viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="cameraMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#cfd8dc" />
+              <stop offset="30%" stopColor="#90a4ae" />
+              <stop offset="70%" stopColor="#546e7a" />
+              <stop offset="100%" stopColor="#37474f" />
+            </linearGradient>
+            <linearGradient id="lensGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#1a1a2e" />
+              <stop offset="50%" stopColor="#0f0f1b" />
+              <stop offset="100%" stopColor="#020205" />
+            </linearGradient>
+            <radialGradient id="lensReflect" cx="35%" cy="35%" r="60%">
+              <stop offset="0%" stopColor="#64b5f6" stopOpacity="0.8" />
+              <stop offset="40%" stopColor="#2196f3" stopOpacity="0.4" />
+              <stop offset="100%" stopColor="#0d47a1" stopOpacity="0" />
+            </radialGradient>
+            <filter id="cameraShadow" x="-10%" y="-10%" width="120%" height="120%">
+              <feDropShadow dx="0" dy="4" stdDeviation="3" floodOpacity="0.3" />
+            </filter>
+          </defs>
+          <g filter="url(#cameraShadow)">
+            {/* Camera body plate */}
+            <rect x="4" y="4" width="56" height="56" rx="14" fill="url(#cameraMetal)" />
+            <rect x="4" y="4" width="56" height="56" rx="14" stroke="rgba(255,255,255,0.25)" strokeWidth="0.8" />
+            
+            {/* Top metallic camera bulge/prism shape */}
+            <path d="M20 4 H44 L40 12 H24 Z" fill="#78909c" />
+            
+            {/* Outer chrome ring of the lens */}
+            <circle cx="32" cy="32" r="19" fill="#263238" stroke="#eceff1" strokeWidth="1.8" />
+            <circle cx="32" cy="32" r="17" stroke="#37474f" strokeWidth="1" />
+            
+            {/* Dark Camera Lens Glass */}
+            <circle cx="32" cy="32" r="15" fill="url(#lensGlass)" />
+            
+            {/* Lens Reflection highlight */}
+            <circle cx="32" cy="32" r="13" fill="url(#lensReflect)" />
+            
+            {/* Small white glossy glare crescent */}
+            <path d="M22 26 C25 21 34 21 38 24" stroke="#ffffff" strokeWidth="1.2" strokeLinecap="round" opacity="0.65" />
+            
+            {/* Green LED On-Indicator */}
+            <circle cx="12" cy="12" r="1.8" fill="#4caf50" filter="drop-shadow(0 0 2px #4caf50)" />
+            
+            {/* Yellow Flash Lens */}
+            <circle cx="52" cy="12" r="2.5" fill="#ffd54f" />
+            <circle cx="52" cy="12" r="1.5" fill="#fff" opacity="0.7" />
           </g>
         </svg>
       );

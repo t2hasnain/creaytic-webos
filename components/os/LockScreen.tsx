@@ -1,5 +1,5 @@
 // Copyright (c) 2026 Hasnain (https://t2hasnain.me). All rights reserved.
-// Licensed under the Creatic WebOS Proprietary Commercial Source & Security License.
+// Licensed under the Creaytic WebOS Proprietary Commercial Source & Security License.
 // Made by Hasnain <t2hasnain.me>
 
 'use client';
@@ -95,7 +95,7 @@ export default function LockScreen() {
         {/* Username */}
         <div className="text-center select-none">
           <h2 className="text-sm font-black tracking-wide text-white/90">
-            {!hasSetupPassword ? 'Welcome to Creatic WebOS' : 'Cupertino User'}
+            {!hasSetupPassword ? 'Welcome to Creaytic WebOS' : 'Cupertino User'}
           </h2>
           <p className="text-[10px] text-white/40 mt-1 font-semibold uppercase tracking-wider">
             {!hasSetupPassword 
@@ -143,7 +143,7 @@ export default function LockScreen() {
       {/* 3. Sleek macOS Lock Screen Footer */}
       <div className="text-[9px] text-white/25 font-bold tracking-widest uppercase flex items-center gap-1.5 select-none">
         <Sparkles size={11} className="text-purple-400" />
-        <span>Creatic WebOS Sandbox Security</span>
+        <span>Creaytic WebOS Sandbox Security</span>
       </div>
 
       {/* 4. Stand-alone Apple Glassmorphic Forget Passcode / Wipe Overlay */}

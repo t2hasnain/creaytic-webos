@@ -1,5 +1,5 @@
 // Copyright (c) 2026 Hasnain (https://t2hasnain.me). All rights reserved.
-// Licensed under the Creatic WebOS Proprietary Commercial Source & Security License.
+// Licensed under the Creaytic WebOS Proprietary Commercial Source & Security License.
 // Made by Hasnain <t2hasnain.me>
 
 'use client';
@@ -28,6 +28,7 @@ import MonitorApp from './apps/MonitorApp';
 import TerminalApp from './apps/TerminalApp';
 import GeminiApp from './apps/GeminiApp';
 import ChatgptApp from './apps/ChatgptApp';
+import CameraApp from './apps/CameraApp';
 
 export default function Desktop() {
   const { wallpaper, windows, openContextMenu, theme, customApps, addCustomApp } = useOSStore();
@@ -90,6 +91,7 @@ export default function Desktop() {
       case 'terminal': return <TerminalApp />;
       case 'gemini': return <GeminiApp />;
       case 'chatgpt': return <ChatgptApp />;
+      case 'camera': return <CameraApp />;
       default: return <div className="p-4 text-white">App not found</div>;
     }
   };

@@ -1,6 +1,6 @@
-#  Creatic WebOS (Cupertino High Sierra)
+#  Creaytic WebOS (Cupertino High Sierra)
 
-Welcome to **Creatic WebOS**, a premium, high-fidelity Apple macOS desktop environment built with Next.js 16.2.6, React 19, and Zustand. It features responsive windows, multitasking, a sandboxed virtual file system, and native utility emulation.
+Welcome to **Creaytic WebOS**, a premium, high-fidelity Apple macOS desktop environment built with Next.js 16.2.6, React 19, and Zustand. It features responsive windows, multitasking, a sandboxed virtual file system, and native utility emulation.
 
 ---
 
@@ -32,7 +32,7 @@ Welcome to **Creatic WebOS**, a premium, high-fidelity Apple macOS desktop envir
 
 ### 6. Dynamic Custom App Shortcut Builder
 * **Right-Click shortcut Creator**: Right-click the desktop area and click **"New App"** to spawn shortcuts. Specify the app name and target web URL.
-* **Deterministic Letter-Badges**: If no custom icon URL is provided, Creatic WebOS auto-generates a stylish geometric HSL gradient icon containing the first character of the app's name.
+* **Deterministic Letter-Badges**: If no custom icon URL is provided, Creaytic WebOS auto-generates a stylish geometric HSL gradient icon containing the first character of the app's name.
 * **Iframe Sandbox Webviews**: Custom apps launch inside a sandboxed wrapper iframe.
 
 ### 7. Interactive Hardware Status Topbar
@@ -63,7 +63,7 @@ Welcome to **Creatic WebOS**, a premium, high-fidelity Apple macOS desktop envir
 
 ## 🌟 Give a Star & Contribute
 
-Thank you for exploring **Creatic WebOS**! 
+Thank you for exploring **Creaytic WebOS**! 
 * If this premium sandbox helps your workflow, please consider **giving [this repository](https://github.com/t2hasnain/creaytic-webos) a Star** 🌟!
 * **Contribute**: Feel free to submit pull requests and contribute enhancements directly on [GitHub](https://github.com/t2hasnain/creaytic-webos) to make this macOS Cupertino sandbox even better. Thank you for your support!
 

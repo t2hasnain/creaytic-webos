@@ -1,5 +1,5 @@
 // Copyright (c) 2026 Hasnain (https://t2hasnain.me). All rights reserved.
-// Licensed under the Creatic WebOS Proprietary Commercial Source & Security License.
+// Licensed under the Creaytic WebOS Proprietary Commercial Source & Security License.
 // Made by Hasnain <t2hasnain.me>
 
 import type { Metadata } from "next";
@@ -18,24 +18,24 @@ const monoFont = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Creatic WebOS - Cupertino High Sierra Simulator",
+  title: "Creaytic WebOS - Cupertino High Sierra Simulator",
   description: "A premium, state-of-the-art WebOS environment mimicking Apple's macOS Cupertino High Sierra. Built on Next.js 16, featuring multi-window desktop environments, zsh terminal simulation, sandboxed VFS, and dynamic custom app creators.",
   keywords: [
-    "creatic webos", "webos", "macos simulator", "web macos", "Hasnain WebOS", "nextjs operating system", 
-    "t2hasnain", "react operating system", "online portfolio", "creatic portfolio", "interactive webos", "AI WebOS"
+    "Creaytic webos", "webos", "macos simulator", "web macos", "Hasnain WebOS", "nextjs operating system", 
+    "t2hasnain", "react operating system", "online portfolio", "Creaytic portfolio", "interactive webos", "AI WebOS"
   ],
   authors: [{ name: "t2hasnain" }],
   openGraph: {
-    title: "Creatic WebOS - Premium macOS Web Simulator",
+    title: "Creaytic WebOS - Premium macOS Web Simulator",
     description: "A premium, state-of-the-art WebOS environment mimicking Apple's macOS Cupertino High Sierra. Built with Next.js 16.",
     url: "https://github.com/t2hasnain/creaytic-webos",
-    siteName: "Creatic WebOS",
+    siteName: "Creaytic WebOS",
     images: [
       {
         url: "/wallpaper.png",
         width: 1200,
         height: 630,
-        alt: "Creatic WebOS Screen Preview",
+        alt: "Creaytic WebOS Screen Preview",
       },
     ],
     locale: "en_US",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Creatic WebOS - Premium macOS Web Simulator",
+    title: "Creaytic WebOS - Premium macOS Web Simulator",
     description: "A premium, state-of-the-art WebOS environment mimicking Apple's macOS Cupertino High Sierra.",
     images: ["/wallpaper.png"],
   },
@@ -68,7 +68,7 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Creatic WebOS",
+    "name": "Creaytic WebOS",
     "description": "A premium, state-of-the-art WebOS environment mimicking Apple's macOS Cupertino High Sierra, built with Next.js 16 and Tailwind.",
     "url": "https://github.com/t2hasnain/creaytic-webos",
     "image": "https://github.com/t2hasnain/creaytic-webos/raw/main/public/wallpaper.png",

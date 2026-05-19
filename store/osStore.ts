@@ -1,5 +1,5 @@
 // Copyright (c) 2026 Hasnain (https://t2hasnain.me). All rights reserved.
-// Licensed under the Creatic WebOS Proprietary Commercial Source & Security License.
+// Licensed under the Creaytic WebOS Proprietary Commercial Source & Security License.
 // Made by Hasnain <t2hasnain.me>
 
 import { create } from 'zustand';
@@ -18,6 +18,7 @@ export type AppId =
   | 'terminal'
   | 'gemini'
   | 'chatgpt'
+  | 'camera'
   | string;
 
 export interface AppConfig {
@@ -41,6 +42,7 @@ export const appsRegistry: Record<string, AppConfig> = {
   calculator: { id: 'calculator', name: 'Calculator', icon: 'calculator', defaultWidth: 350, defaultHeight: 520, isResizable: false },
   monitor: { id: 'monitor', name: 'Activity Monitor', icon: 'monitor', defaultWidth: 650, defaultHeight: 480 },
   terminal: { id: 'terminal', name: 'Terminal', icon: 'terminal', defaultWidth: 700, defaultHeight: 480 },
+  camera: { id: 'camera', name: 'Photo Booth', icon: 'camera', defaultWidth: 850, defaultHeight: 640 },
 };
 
 export interface WindowState {
@@ -178,6 +180,7 @@ const defaultVFS: VFSItem[] = [
   { id: 'app-calc', name: 'Calculator.app', type: 'file', ext: 'app', appId: 'calculator', parentId: 'applications' },
   { id: 'app-notes', name: 'Notepad.app', type: 'file', ext: 'app', appId: 'notepad', parentId: 'applications' },
   { id: 'app-term', name: 'Terminal.app', type: 'file', ext: 'app', appId: 'terminal', parentId: 'applications' },
+  { id: 'app-camera', name: 'Photo Booth.app', type: 'file', ext: 'app', appId: 'camera', parentId: 'applications' },
 
   { id: 'pic-abstract', name: 'Abstract_Wave.png', type: 'file', ext: 'png', content: '/wallpaper.png', parentId: 'pictures' },
 ];
@@ -191,7 +194,7 @@ const initialGameStats = {
 };
 
 const defaultShortcuts: AppId[] = [
-  'browser', 'folder', 'notepad', 'gallery', 'settings', 'game', 'passwords', 'calculator', 'terminal'
+  'browser', 'folder', 'notepad', 'gallery', 'camera', 'settings', 'game', 'passwords', 'calculator', 'terminal'
 ];
 
 export const useOSStore = create<OSState>()(

@@ -1,5 +1,5 @@
 /* Copyright (c) 2026 Hasnain (https://t2hasnain.me). All rights reserved. */
-/* Licensed under the Creatic WebOS Proprietary Commercial Source & Security License. */
+/* Licensed under the Creaytic WebOS Proprietary Commercial Source & Security License. */
 /* Made by Hasnain <t2hasnain.me> */
 
 @import "tailwindcss";
@@ -7,6 +7,12 @@
 @theme {
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
+  --animate-flash: flash 0.25s ease-out forwards;
+
+  @keyframes flash {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
 }
 
 :root {
