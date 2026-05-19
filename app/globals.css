@@ -1,0 +1,68 @@
+/* Copyright (c) 2026 Hasnain (https://t2hasnain.me). All rights reserved. */
+/* Licensed under the Creatic WebOS Proprietary Commercial Source & Security License. */
+/* Made by Hasnain <t2hasnain.me> */
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  overflow: hidden; /* OS should not scroll */
+  user-select: none;
+}
+
+/* Modern Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(150, 150, 150, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(150, 150, 150, 0.5);
+}
+
+/* Glassmorphism utilities */
+.glass {
+  background: rgba(20, 20, 20, 0.5);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-panel {
+  background: rgba(30, 30, 30, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+.app-icon-shadow {
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.4));
+}
